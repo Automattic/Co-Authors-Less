@@ -23,17 +23,16 @@ jQuery( document ).ready(function( $ ){
 		}
 
 		// Password.
-
+		$('label[for="pass1"]').parents('tr').hide();
 
 		// Email notification.
 		$('input#send_user_notification').parents('tr').hide();
 
-
+		// User profile fields.
 		$('label[for="rich_editing"]').parents('tr').hide();
 		$('label[for="comment_shortcuts"]').parents('tr').hide();
 		$('label[for="admin_bar_front"]').parents('tr').hide();
 		$('label[for="locale"]').parents('tr').hide();
-
 		$('tr.user-admin-color-wrap').hide();
 
 	}
@@ -56,10 +55,12 @@ jQuery( document ).ready(function( $ ){
 		// Email notification.
 		$('input#send_user_notification').parents('tr').show();
 
+		// User profile fields.
 		$('label[for="rich_editing"]').parents('tr').show();
 		$('label[for="comment_shortcuts"]').parents('tr').show();
 		$('label[for="admin_bar_front"]').parents('tr').show();
 		$('label[for="locale"]').parents('tr').show();
+		$('tr.user-admin-color-wrap').show();
 	}
 
 	// Trigger change event on page load.
